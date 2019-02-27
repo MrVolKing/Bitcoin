@@ -1,0 +1,46 @@
+.button{
+    border: none;
+    width: rem(200);
+    height: rem(51);
+    background-color: #04c939;
+    border: none;
+    border-radius: rem(28);
+    color: $white;
+    font-size: rem(17);
+    font-weight: 700;
+    line-height: rem(16.92);
+    letter-spacing: rem(0.11);
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+
+    &:hover{
+        background-color: #009d2a;
+    }
+
+    &:active{
+        background-color: #04c939;
+        // box-shadow: inset 0 rem(2) rem(3px) rgba(198, 138, 67, 0.1);
+        // background-color: #f5f2f2;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:769px){
+    .button{
+       
+    }
+
+}
+
+    
+
+    
+
+
+
+

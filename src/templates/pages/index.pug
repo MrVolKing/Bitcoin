@@ -1,0 +1,197 @@
+extends ../template
+
+block varibles
+    - var title = "Affiliate program"
+
+block content
+   
+    .content
+
+        section.sect1
+            .wrapper
+                .sect1__content
+                    .sect1__left
+                        .sect1__title
+                            h1.title.title_white Партнерская программа
+                        .sect1__desc
+                            span Присоединяйся к бирже Iexchange, приглашай других и получай прибыль уже сейчас!
+                        .sect1__button
+                            button.button  стать партнером
+                    .sect1__right
+                        .sect1__img
+                            img(src="./images/sect1_2.png", alt="")
+
+            .img1
+                img(src="./images/sect1.png", alt="")
+            .img2
+                img(src="./images/2.png", alt="")
+                
+
+
+        section.sect2
+            .wrapper
+                .sect2__content
+                    .sect2__top
+                        .sect2__title
+                            h2.title Что мы предлагаем?
+                        .sect2__desc
+                            p С каждой сделки, совершенной на Iexchange, биржа имеет прибыль в виде комиссии которую платят клиенты. Став нашим партнером, вы получаете возможность не только самостоятельно совершать сделки на бирже, но и привлекать к торговле на нашей площадке других участников, получая часть нашей прибыли от совершаемых ими сделок. Сумма вашего дохода при этом будет составлять:
+ 
+                    .sect2__bottom
+                        .sect2__block.sect2__block_left
+                            .sect2__blockcontent
+                                .sect2__img.sect2__img_left
+                                    img(src="./images/info1.png", alt="")
+                                .sect2__text
+                                    p  30% от комиссий со сделок привлеченных вами пользователей - для обычных участников 
+                                        b
+                                            | партнерской программы.
+                            .sect2__button
+                                button.button  стать партнером
+
+                        .sect2__block.sect2__block_right
+                            .sect2__img
+                                img(src="./images/info2.png", alt="")
+                            .sect2__text
+                                p  Получив статус 
+                                    b
+                                        | премиум партнера*
+                                    |, вы будете получать 50% от комиссий со сделок клиентов, которых привлекли непосредственно вы и 10%  со сделок трейдеров, привлеченных этими клиентами.
+                                p То есть, вы, будете получать 50% от комиссии клиентов первого уровня и 10% от  комиссии с клиентов второго уровня.
+                                p.ital_text
+                                    i *Детальная информация о получении статуса премиум партнера доступна тут. Об условиях действия партнерской программы можно прочитать тут.
+ 
+ 
+
+        section.sect3
+            .wrapper
+                .sect3__content
+                    .sect3__title
+                        h2.title Как партнеру зарабатвать с IEXCHANGE? 
+                    .sect3__blocks
+                        img(src="./images/1-4.png", alt="")
+                        .sect3__blockitem
+                            span Зарегистрируйся<br> и стань нашим партнером<br> уже сегодня
+                        .sect3__blockitem
+                            span Получи партнерскую<br> ссылку в кабинете
+                        .sect3__blockitem
+                            span Активно приглашай на<br> биржу других пользователей
+                        .sect3__blockitem
+                            span Получай партнерское<br> вознаграждение 
+
+
+        section.sect4
+            .wrapper
+                .sect4__content
+                    .sect4__title
+                        h2.title Почему стоит работать с нами?
+                    .sect4__blocks
+                        .sect4__blockitem
+                            .sect4__img.sect4__img_1
+                                img(src="./images/icn1.png", alt="")
+                            .sect4__desc
+                                span Простая и быстрая регистрация. Весь процесс занимает не более 5 минут 
+                        .sect4__blockitem
+                            .sect4__img.sect4__img_2
+                                img(src="./images/icn2.png", alt="")
+                            .sect4__desc
+                                span Простота в привлечении новых пользователей
+                        .sect4__blockitem
+                            .sect4__img.sect4__img_3
+                                img(src="./images/icn3.png", alt="")
+                            .sect4__desc
+                                span Возможность получения премиум статуса и увеличения прибыли 
+                        .sect4__blockitem
+                            .sect4__img.sect4__img_4
+                                img(src="./images/icn4.png", alt="")
+                            .sect4__desc
+                                span Получение дохода от партнерской программы без необходимости внесения собственных средств
+                        .sect4__blockitem
+                            .sect4__img.sect4__img_5
+                                img(src="./images/icn5.png", alt="")
+                            .sect4__desc
+                                span Отсутствие ограничений по сумме выплат 
+                        .sect4__blockitem
+                            .sect4__img.sect4__img_6
+                                img(src="./images/icn6.png", alt="")
+                            .sect4__desc
+                                span Удобный и функциональный кабинет партнера, отчеты в режиме реального времени
+                        .sect4__blockitem
+                            .sect4__img.sect4__img_7
+                                img(src="./images/icn7.png", alt="")
+                            .sect4__desc
+                                span Широкий выбор эффективных, постоянно обновляемых рекламных материалов
+                        .sect4__blockitem
+                            .sect4__img.sect4__img_8
+                                img(src="./images/icn8.png", alt="")
+                            .sect4__desc
+                                span Персональный менеджер
+
+
+        section.sect5#scrollPlay
+            .wrapper
+                .sect5__content
+                    iframe(src="https://www.youtube.com/embed/uWEuDrTa52E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                        
+
+        section.sect6
+            .wrapper
+                .sect6__content
+                    .sect6__title
+                        h2.title Успей стать одиним из первых!
+                    .sect6__blockblocks#counter
+                        
+                        .sect6__blockitem
+                            img(src="./images/count.png", alt="")
+                            div(data-num="074" class="number") 0
+                            .sect6__desc
+                                span ПАРТНЕРОВ
+                        .sect6__blockitem
+                            img(src="./images/count.png", alt="")
+                            div(data-num="456" class="number") 0
+                            .sect6__desc
+                                span ТРЕЙДЕРОВ
+                        .sect6__blockitem
+                            img(src="./images/count.png", alt="")
+                            div(data-num="342" class="number") 0
+                            .sect6__desc  
+                                span ВЫПЛАЧЕНО
+
+                    //- .sect6__blockblocks
+                        
+                    //-     //- .sect6__blockitem.counters
+                    //-     //-     img(src="./images/count.png", alt="")
+                    //-     //-     div(class="counter number" aria-label="058") 058
+                    //-     //-     .sect6__desc
+                    //-     //-         span ПАРТНЕРОВ
+                    //-     //- .sect6__blockitem
+                    //-     //-     img(src="./images/count.png", alt="")
+                    //-     //-     div(data-num="456" class="number") 0
+                    //-     //-     .sect6__desc
+                    //-     //-         span ТРЕЙДЕРОВ
+                    //-     //- .sect6__blockitem
+                    //-     //-     img(src="./images/count.png", alt="")
+                    //-     //-     div(data-num="342" class="number") 0
+                    //-     //-     .sect6__desc  
+                    //-     //-         span ВЫПЛАЧЕНО
+            
+
+                    .sect6__button
+                        button.button  стать партнером
+
+
+                    //- .counters
+                    //-     h3(class="counter number" aria-label="058") 058
+
+                    script
+                        
+
+
+
+                    
+
+
+
+                    
+                 
+        include ../common/popaps.pug      

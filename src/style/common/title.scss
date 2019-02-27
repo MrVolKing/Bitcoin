@@ -1,0 +1,9 @@
+.title{
+    font-size: rem(42);
+    font-weight: 500;
+    color: #000000;
+    line-height: rem(41.67);
+    &_white{
+        color: $white;
+    }
+}

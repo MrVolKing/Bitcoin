@@ -1,0 +1,44 @@
+.sect3{
+    padding: rem(48) 0 rem(40) 0;
+    background-color: #e7f0fd;
+    height: rem(494);
+
+    &__title{
+        margin-bottom: rem(42);
+    }
+
+    &__blocks{
+        padding: rem(138) 0 rem(120) 0;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        img{
+            position: absolute;
+            top: 0;
+            left: rem(33);
+            z-index: 900;
+            width: rem(1072);
+            height: rem(322);
+        }
+        
+    }
+
+    &__blockitem{
+        position: relative;
+        z-index: 1000;
+        padding-left: rem(108);
+        span{
+            color: $black;
+            font-size: rem(17);
+            font-weight: 400;
+            line-height: rem(20.83);
+        }
+    }
+   
+}
+
+@media screen and (max-width:769px){
+    .sect3{
+       
+    }
+}

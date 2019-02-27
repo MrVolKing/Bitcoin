@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+textarea {
+    resize: vertical;
+  }
+
+h1, h2, h3, h4{
+    font-weight: 400;
+}
+
+
+
+
+
+// my style
+
+* {
+    transition:all 0.1s ease-in-out
+}
+
+html{
+    font-size: 0.84vw;
+}
+
+@media screen and (max-width:769px){
+    html{
+        font-size: 16px;
+    }
+}
+
+.content{
+    overflow: hidden;
+    // min-height: 100vh;
+}
+
+body{
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+a{
+    cursor: pointer !important;
+    text-decoration: none;
+    &:hover{
+        
+    }
+}
+
+
+@font-face {
+    font-family: parangon; /* Имя шрифта */
+    src: url(../fonts/Parangon.otf); // 400
+    
+    font-weight: 400;
+    font-style: normal;
+}
+
+

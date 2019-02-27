@@ -1,0 +1,65 @@
+.sect1{
+    // background-image: linear-gradient( 90deg, #041637, #0a2552);
+    padding: rem(63) 0 rem(41) 0;
+    position: relative;
+    z-index: 1000;
+    .img1{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        z-index: 900;
+        img{
+            width: rem(136);
+            height: rem(427);
+        }
+    }
+
+    .img2{
+        position: absolute;
+        top: 0;
+        z-index: 800;
+        img{
+            width: 100%;
+            height: rem(1436);
+        }
+    }
+
+    &__content{
+        display: flex;
+        position: relative;
+        z-index: 1000;
+    }
+
+    &__left{
+        padding-top: rem(116);
+        width: 50%;
+    }
+
+    &__title{
+        margin-bottom: rem(24);
+    }
+
+    &__desc{
+        span{
+            color: $white;
+            font-size: rem(15);
+            font-weight: 400;
+        }
+        margin-bottom: rem(43);
+    }
+
+    &__right{
+        width: 50%;
+    }
+
+    &__img{
+        // padding-left: rem(100);
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: rem(501);
+            height: rem(323);
+        }
+    }
+
+}
