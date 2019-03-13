@@ -19,12 +19,18 @@ block content
                             button.button  стать партнером
                     .sect1__right
                         .sect1__img
-                            img(src="./images/sect1_2.png", alt="")
+                            img(src="./images/sect1_2_m.png", alt="")
 
             .img1
-                img(src="./images/sect1.png", alt="")
+                img(src="./images/sect1.png", alt="") 
+                img(src="./images/sect1_leftbg.png", alt="")
             .img2
                 img(src="./images/2.png", alt="")
+                img(src="./images/sect1_rightbg.png", alt="")
+            .img3
+                img(src="./images/sect1_circlebg_l.png", alt="")
+            .img4
+                img(src="./images/sect1_circlebg_r.png", alt="")
                 
 
 
@@ -59,8 +65,13 @@ block content
                                     |, вы будете получать 50% от комиссий со сделок клиентов, которых привлекли непосредственно вы и 10%  со сделок трейдеров, привлеченных этими клиентами.
                                 p То есть, вы, будете получать 50% от комиссии клиентов первого уровня и 10% от  комиссии с клиентов второго уровня.
                                 p.ital_text
-                                    i *Детальная информация о получении статуса премиум партнера доступна тут. Об условиях действия партнерской программы можно прочитать тут.
+                                    i *Детальная информация о получении статуса премиум партнера доступна 
+                                        a(href="#") тут. 
+                                        | Об условиях действия партнерской программы можно прочитать 
+                                        a(href="#") тут.
  
+                            .sect2__button.btn_right
+                                button.button  стать партнером
  
 
         section.sect3
@@ -70,13 +81,14 @@ block content
                         h2.title Как партнеру зарабатвать с IEXCHANGE? 
                     .sect3__blocks
                         img(src="./images/1-4.png", alt="")
-                        .sect3__blockitem
+                        img(src="./images/1-4_m.png", alt="")
+                        .sect3__blockitem.sect3__blockitem_first
                             span Зарегистрируйся<br> и стань нашим партнером<br> уже сегодня
-                        .sect3__blockitem
+                        .sect3__blockitem.sect3__blockitem_second
                             span Получи партнерскую<br> ссылку в кабинете
-                        .sect3__blockitem
+                        .sect3__blockitem.sect3__blockitem_third
                             span Активно приглашай на<br> биржу других пользователей
-                        .sect3__blockitem
+                        .sect3__blockitem.sect3__blockitem_fourth
                             span Получай партнерское<br> вознаграждение 
 
 
@@ -194,4 +206,4 @@ block content
 
                     
                  
-        include ../common/popaps.pug      
+        //- include ../common/popaps.pug      

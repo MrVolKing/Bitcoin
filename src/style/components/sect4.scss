@@ -94,3 +94,54 @@
         }
     }
 }
+
+
+@media screen and (max-width:769px){
+    .sect4{
+        padding: 20px 0 27px 0;
+
+        &__title{
+            margin-bottom: 17px;
+            h2{
+                line-height: 26.19px;
+            }
+        }
+
+        &__blocks{
+            flex-wrap: wrap;
+        }
+        
+        &__blockitem{
+            width: 50%;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        &__img{
+            width: 113px;
+            height: 113px;
+            img{
+                width: auto;
+                height: 68%;
+            }
+        }
+
+        &__desc{
+            span{
+                font-size: 14px;
+                line-height: 16.98px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .sect4{
+        
+        &__blockitem{
+            width: 100%;
+        }
+    }
+}

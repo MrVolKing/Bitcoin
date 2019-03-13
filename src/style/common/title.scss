@@ -7,3 +7,12 @@
         color: $white;
     }
 }
+
+
+@media screen and (max-width:769px) {
+    .title{
+        font-size: 23px;
+        text-align: center;
+        
+    }
+}

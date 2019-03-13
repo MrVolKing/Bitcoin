@@ -60,19 +60,82 @@
         }
         .ital_text{
             margin-top: rem(14);
+            a{
+                color: #54a7fd;
+            }
         }
     }
 
     &__button{
         margin-bottom: -34px;
+        &.btn_right{
+            display: none;
+        }
     }
-
-
 }
 
 
 @media screen and (max-width:769px){
     .sect2{
+        padding: 15px 0 12px 0;
 
+        &__title{
+            margin-bottom: 8px;
+        }
+
+        &__desc{
+            p{
+                font-size: 14px;
+                line-height: 16.38px;
+                letter-spacing: -0.17px;
+            }
+        }
+
+        &__top{
+            padding-bottom: 2px;
+        }
+
+        &__bottom{
+            flex-direction: column;
+        }
+
+        &__block{
+            width: 100%;
+            &_left{
+                margin-bottom: 19px;
+            }
+        }
+
+        &__img{
+            display: flex;
+            align-items: flex-start;
+            &_left{
+                margin-bottom: 3px;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__text{
+            margin-bottom: 15px;
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 15.59px;
+                b{
+                    font-weight: 400;
+                }
+            }
+        }
+
+        &__button{
+            margin-bottom: 0;
+            text-align: center;
+            &.btn_right{
+                display: block;
+            }
+        }
     }
 }

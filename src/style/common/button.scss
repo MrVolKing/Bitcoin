@@ -13,28 +13,23 @@
     text-transform: uppercase;
     cursor: pointer;
     outline: none;
-
     &:hover{
         background-color: #009d2a;
     }
-
     &:active{
         background-color: #04c939;
-        // box-shadow: inset 0 rem(2) rem(3px) rgba(198, 138, 67, 0.1);
-        // background-color: #f5f2f2;
     }
-
 }
-
-
-
 
 
 @media screen and (max-width:769px){
     .button{
-       
+        width: 138px;
+        height: 35px;
+        font-size: 12px;
+        line-height: 11.66px;
+        letter-spacing: 0.11px;
     }
-
 }
 
     

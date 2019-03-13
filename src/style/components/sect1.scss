@@ -1,8 +1,8 @@
 .sect1{
-    // background-image: linear-gradient( 90deg, #041637, #0a2552);
     padding: rem(63) 0 rem(41) 0;
     position: relative;
     z-index: 1000;
+
     .img1{
         position: absolute;
         left: 50%;
@@ -11,6 +11,9 @@
         img{
             width: rem(136);
             height: rem(427);
+            &:last-child{
+                display: none;
+            }
         }
     }
 
@@ -21,7 +24,14 @@
         img{
             width: 100%;
             height: rem(1436);
+            &:last-child{
+                display: none;
+            }
         }
+    }
+
+    .img3, .img4{
+        display: none;
     }
 
     &__content{
@@ -40,12 +50,12 @@
     }
 
     &__desc{
+        margin-bottom: rem(43);
         span{
             color: $white;
             font-size: rem(15);
             font-weight: 400;
         }
-        margin-bottom: rem(43);
     }
 
     &__right{
@@ -53,7 +63,6 @@
     }
 
     &__img{
-        // padding-left: rem(100);
         display: flex;
         justify-content: flex-end;
         img{
@@ -61,5 +70,93 @@
             height: rem(323);
         }
     }
+}
 
+
+@media screen and (max-width:769px){
+    .sect1{
+        padding: 33px 0 56px 0;
+        background-color: #06193d;
+
+        &__content{
+            flex-direction: column;
+        }
+
+        &__left{
+            padding: 0;
+            width: 100%;
+            margin-bottom: 35px;
+        }
+
+        &__right{
+            width: 100%;
+        }
+
+        &__title{
+            margin-bottom: 13px;
+        }
+
+        &__desc{
+            text-align: center;
+            margin-bottom: 32px;
+            p{
+                font-size: 14px;
+                letter-spacing: 0.04px;
+            }
+        }
+
+        &__button{
+            text-align: center;
+        }
+
+        &__img{
+            display: flex;
+            justify-content: center;
+            img{
+                width: auto;
+                height: auto;
+            }
+        }
+
+        .img1{
+            left: 0;
+            top: inherit;
+            bottom: 0;
+            img{
+                display: none;
+                width: auto;
+                height: auto;
+                &:last-child{
+                    display: block;
+                }
+            }
+        }
+
+        .img2{
+            right: 0;
+            top: 35px;
+            img{
+                display: none;
+                width: auto;
+                height: auto;
+                &:last-child{
+                    display: block;
+                }
+            }
+        }
+
+        .img3{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 206px;
+        }
+
+        .img4{
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 437px;
+        }
+    }
 }

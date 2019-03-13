@@ -23,6 +23,7 @@ $(document).ready(() => {
 
     const time = 2;
     let loadindex = 1;
+    
     $(window).scroll( () => {
         $('#counter').each(function(){
             let 
