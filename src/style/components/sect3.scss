@@ -13,14 +13,15 @@
         justify-content: space-between;
         position: relative;
         img{
+            display: none;
             position: absolute;
             top: 0;
             left: rem(33);
             z-index: 900;
             width: rem(1072);
             height: rem(322);
-            &:last-child{
-                display: none;
+            &:first-child{
+                display: block !important;
             }
         }
     }
@@ -56,8 +57,9 @@
             flex-direction: column;
             align-items: center;
             img{
+                display: block !important;
                 &:first-child{
-                    display: none;
+                    display: none !important;
                 }
                 width: auto;
                 height: auto;
