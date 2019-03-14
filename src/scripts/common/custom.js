@@ -27,7 +27,7 @@ $(document).ready(() => {
     $(window).scroll( () => {
         $('#counter').each(function(){
             let 
-                cPos = $('#scrollPlay').offset().top
+                cPos = $('.sect5').offset().top
                 topWindow = $(window).scrollTop();
                 if(cPos < topWindow) {
                     if(loadindex < 2) {

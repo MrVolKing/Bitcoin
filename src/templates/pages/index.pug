@@ -15,11 +15,15 @@ block content
                             h1.title.title_white Партнерская программа
                         .sect1__desc
                             span Присоединяйся к бирже Iexchange, приглашай других и получай прибыль уже сейчас!
-                        .sect1__button
+                        .sect1__button.btn_top
                             button.button  стать партнером
                     .sect1__right
                         .sect1__img
+                            img(src="./images/sect1_2.png", alt="")
                             img(src="./images/sect1_2_m.png", alt="")
+
+                .sect1__button.btn_bottom
+                    button.button  стать партнером
 
             .img1
                 img(src="./images/sect1.png", alt="") 
@@ -44,34 +48,41 @@ block content
                             p С каждой сделки, совершенной на Iexchange, биржа имеет прибыль в виде комиссии которую платят клиенты. Став нашим партнером, вы получаете возможность не только самостоятельно совершать сделки на бирже, но и привлекать к торговле на нашей площадке других участников, получая часть нашей прибыли от совершаемых ими сделок. Сумма вашего дохода при этом будет составлять:
  
                     .sect2__bottom
-                        .sect2__block.sect2__block_left
-                            .sect2__blockcontent
-                                .sect2__img.sect2__img_left
-                                    img(src="./images/info1.png", alt="")
-                                .sect2__text
-                                    p  30% от комиссий со сделок привлеченных вами пользователей - для обычных участников 
-                                        b
-                                            | партнерской программы.
-                            .sect2__button
-                                button.button  стать партнером
+                        div.statistic
+                            .sect2__block.sect2__block_left
+                                .sect2__blockcontent
+                                    .sect2__img.sect2__img_left
+                                        img(src="./images/info1.png", alt="")
+                                    .sect2__text
+                                        p  30% от комиссий со сделок привлеченных вами пользователей - для обычных участников 
+                                            b
+                                                | партнерской программы.
+                                    .sect2__button.btn_left
+                                        button.button  стать партнером
 
-                        .sect2__block.sect2__block_right
-                            .sect2__img
-                                img(src="./images/info2.png", alt="")
-                            .sect2__text
-                                p  Получив статус 
-                                    b
-                                        | премиум партнера*
-                                    |, вы будете получать 50% от комиссий со сделок клиентов, которых привлекли непосредственно вы и 10%  со сделок трейдеров, привлеченных этими клиентами.
-                                p То есть, вы, будете получать 50% от комиссии клиентов первого уровня и 10% от  комиссии с клиентов второго уровня.
-                                p.ital_text
-                                    i *Детальная информация о получении статуса премиум партнера доступна 
-                                        a(href="#") тут. 
-                                        | Об условиях действия партнерской программы можно прочитать 
-                                        a(href="#") тут.
+                            .sect2__block.sect2__block_right
+                                .sect2__img
+                                    img(src="./images/info2.png", alt="")
+                                .sect2__text
+                                    p  Получив статус 
+                                        b
+                                            | премиум партнера*
+                                        |, вы будете получать 50% от комиссий со сделок клиентов, которых привлекли непосредственно вы и 10%  со сделок трейдеров, привлеченных этими клиентами.
+                                    p То есть, вы, будете получать 50% от комиссии клиентов первого уровня и 10% от  комиссии с клиентов второго уровня.
+                        
+                                .sect2__button.btn_right
+                                    button.button  стать партнером
+
+                        p.ital_text
+                            i *Детальная информация о получении статуса премиум партнера доступна 
+                                a(href="#") тут. 
+                                | Об условиях действия партнерской программы можно прочитать 
+                                a(href="#") тут.
+
+                        .sect2__button.btn_cntr
+                            button.button  стать партнером
  
-                            .sect2__button.btn_right
-                                button.button  стать партнером
+                        
  
 
         section.sect3
@@ -140,9 +151,12 @@ block content
                                 span Персональный менеджер
 
 
-        section.sect5#scrollPlay
+        section.sect5
             .wrapper
                 .sect5__content
+
+                    .sect5__title
+                        h2.title Посмотри наши видео
                     iframe(src="https://www.youtube.com/embed/uWEuDrTa52E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
                         
 
@@ -155,7 +169,7 @@ block content
                         
                         .sect6__blockitem
                             img(src="./images/count.png", alt="")
-                            div(data-num="074" class="number") 0
+                            div(data-num="075" class="number") 0
                             .sect6__desc
                                 span ПАРТНЕРОВ
                         .sect6__blockitem
@@ -167,7 +181,7 @@ block content
                             img(src="./images/count.png", alt="")
                             div(data-num="342" class="number") 0
                             .sect6__desc  
-                                span ВЫПЛАЧЕНО
+                                span ВЛОЖЕНИЯ ВЫПЛАЧЕНО
 
                     //- .sect6__blockblocks
                         

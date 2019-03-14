@@ -2,6 +2,9 @@
     padding: rem(63) 0 rem(41) 0;
     position: relative;
     z-index: 1000;
+    // background: url(../images/bg1_1.png);
+    // background-color: red; #041637; #092350
+    background: linear-gradient(to right, #041637, #092350);
 
     .img1{
         position: absolute;
@@ -19,7 +22,7 @@
 
     .img2{
         position: absolute;
-        top: 0;
+        top: rem(90);
         z-index: 800;
         img{
             width: 100%;
@@ -27,6 +30,9 @@
             &:last-child{
                 display: none;
             }
+            // &:first-child{
+            //     display: none;
+            // }
         }
     }
 
@@ -38,6 +44,7 @@
         display: flex;
         position: relative;
         z-index: 1000;
+        margin-bottom: rem(20);
     }
 
     &__left{
@@ -53,7 +60,7 @@
         margin-bottom: rem(43);
         span{
             color: $white;
-            font-size: rem(15);
+            font-size: rem(18);
             font-weight: 400;
         }
     }
@@ -68,6 +75,18 @@
         img{
             width: rem(501);
             height: rem(323);
+            &:last-child{
+                display: none;
+            }
+        }
+    }
+
+    &__button{
+        text-align: center;
+        position: relative;
+        z-index: 100000;
+        &.btn_top{
+            display: none;
         }
     }
 }
@@ -107,6 +126,12 @@
 
         &__button{
             text-align: center;
+            &.btn_top{
+                display: block;
+            }
+            &.btn_bottom{
+                display: none;
+            }
         }
 
         &__img{
@@ -115,6 +140,12 @@
             img{
                 width: auto;
                 height: auto;
+                &:first-child{
+                    display: none;
+                }
+                &:last-child{
+                    display: block;
+                }
             }
         }
 

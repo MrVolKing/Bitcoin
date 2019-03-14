@@ -14,15 +14,18 @@
     &__desc{
         p{
         color: #575757;
-        font-size: rem(17);
+        font-size: rem(20);
         font-weight: 500;
-        line-height: rem(20.83);
+        line-height: rem(25);
         }
     }
 
     &__bottom{
-        display: flex;
-        justify-content: space-between;
+        .statistic{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: rem(20);
+        }
     }
 
     &__block{
@@ -54,21 +57,26 @@
     &__text{
         p{
             color: #2c2b2b;
-            font-size: rem(17);
+            font-size: rem(20);
             font-weight: 500;
-            line-height: rem(20.83);
+            line-height: rem(25);
         }
-        .ital_text{
-            margin-top: rem(14);
-            a{
-                color: #54a7fd;
-            }
+    }
+
+    .ital_text{
+        margin-bottom: rem(40);
+        font-size: rem(16);
+        line-height: rem(21);
+        a{
+            font-size: rem(17);
+            line-height: rem(21);
+            color: #54a7fd;
         }
     }
 
     &__button{
-        margin-bottom: -34px;
-        &.btn_right{
+        text-align: center;
+        &.btn_right, &.btn_left{
             display: none;
         }
     }
@@ -96,7 +104,10 @@
         }
 
         &__bottom{
-            flex-direction: column;
+            .statistic{
+                flex-direction: column;
+            }
+            
         }
 
         &__block{
@@ -133,8 +144,11 @@
         &__button{
             margin-bottom: 0;
             text-align: center;
-            &.btn_right{
+            &.btn_right, &.btn_left{
                 display: block;
+            }
+            &.btn_cntr{
+                display: none;
             }
         }
     }
