@@ -74,6 +74,7 @@
             font-size: rem(22);
             font-weight: 600;
             line-height: rem(25);
+            outline: none;
         }
     }
 
@@ -115,6 +116,41 @@
 
 
 @media screen and (max-width:769px){
+    .contentpopap{
+        width: 90%;
+
+        &__inputblock{
+            input{
+                width: 100%;
+            }
+        }
+    }
     
+}
+
+@media screen and (max-width:500px){
+    .contentpopap{
+        padding: 20px;
+
+        &__inputblock{
+            label{
+                font-size: 20px;
+            }
+
+            input{
+                width: 100%;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+
+        &__button{
+            padding-top: rem(22);
+        }
+
+        &__img1, &__img2{
+            display: none;
+        } 
+    }
     
 }
