@@ -2,6 +2,10 @@
     padding: rem(76) 0 rem(29) 0;
     background-color: #e7f0fd;
 
+    .wrapper{
+        width: rem(1615);
+    }
+
     &__title{
         margin-bottom: rem(36);
     }
@@ -14,9 +18,9 @@
 
     &__blockitem{
         position: relative;
-        width: rem(348);
+        width: rem(500);
         height: rem(206);
-        padding: rem(38) rem(18) rem(16) 0;
+        padding: rem(36) rem(26) rem(16) 0;
         img{
             position: absolute;
             z-index: 700;
@@ -35,7 +39,7 @@
             line-height: rem(114.630);
             display: flex;
             justify-content: flex-end;
-            letter-spacing: rem(21);
+            letter-spacing: rem(28);
             margin-bottom: rem(12);
         }
     }
@@ -51,6 +55,7 @@
             font-weight: 400;
             line-height: rem(20.83);
             letter-spacing: normal;
+            text-transform: uppercase;
         }
     }
 
@@ -188,14 +193,14 @@
 
         &__blockitem{
             margin-bottom: 22px;
-            width: 248px;
+            width: 274px;
             height: 146px;
             margin: 0 auto 22px auto;
-            padding: 29px 12px 0px 4px;
+            padding: 29px 15px 0px 4px;
             .number{
-                font-size: 85px;
+                font-size: 70px;
                 line-height: 78px;
-                letter-spacing: 14px;
+                letter-spacing: 11px;
                 margin-bottom: 0;
             }
         }

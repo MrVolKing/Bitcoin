@@ -33,7 +33,7 @@
         span{
             color: $black;
             font-size: rem(20);
-            font-weight: 400;
+            font-weight: 600;
             line-height: rem(25);
         }
     }
@@ -76,15 +76,16 @@
             }
             &_first{
                 padding-top: 35px;
-                padding-left: 42px;
+                padding-left: 10px;
                 margin-bottom: 70px;
             }
             &_second{
                 margin-right: 68px;
-                margin-bottom: 65px;
+                margin-bottom: 75px;
+                padding-left: 22px;
             }
             &_third{
-                padding-left: 70px;
+                padding-left: 0;
                 margin-bottom: 71px;
             }
             &_fourth{

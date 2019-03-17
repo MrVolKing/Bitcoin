@@ -2,26 +2,30 @@ $(document).ready(() => {
 
     // popap
 
-    $('.boottomcontent__button button').click(function() {
-        $('.modalDialogcustom').addClass('modalDialogcustom_active');
-        $('.boottomcontent').addClass('content_hidden');
-        $('.boottomcontent__bottom').addClass('content_hidden');
-        $('.footer').addClass('content_hidden');
+    body = $('body');
+
+    $('.btn').click(function() {
+        // $('.modalDialogCustom').addClass('modalDialogCustom_active');
+        $('.modalDialogCustom').show();
+        $(body).css('overflow', 'hidden');
+
+        // setTimeout(function(){
+        //     $('.shadow_popap').addClass('opasity');
+        // }, 500);
+
     });
 
-    $('.contentpopap__close').click(function() {
-        $('.modalDialogcustom').removeClass('modalDialogcustom_active');
-        $('.boottomcontent').removeClass('content_hidden');
-        $('.boottomcontent__bottom').removeClass('content_hidden');
-        $('.footer').removeClass('content_hidden');
+    $('.contentpopap__close, .shadow_popap').click(function() {
+        // $('.modalDialogCustom').removeClass('modalDialogCustom_active');
+        $('.modalDialogCustom').hide();
+        $(body).css('overflow', 'visible');
+        $('.shadow_popap').removeClass('opasity');
     });
-
-
 
 
     //counter
 
-    const time = 2;
+    const time = 1000;
     let loadindex = 1;
     
     $(window).scroll( () => {
@@ -35,7 +39,7 @@ $(document).ready(() => {
                             var 
                             i = 1,
                             num = $(this).data('num'),
-                            step = 1000 * time / num,
+                            step = 1 / (num * num * num),
                             that = $(this),
                             int = setInterval(function(){
                             if (i <= num) {
@@ -46,7 +50,7 @@ $(document).ready(() => {
                                 clearInterval(int);
                             }
                             i++;
-                            },step);
+                            },0.01);
                         }); 
                     }
                     

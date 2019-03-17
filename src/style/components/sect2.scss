@@ -30,20 +30,20 @@
 
     &__block{
         &_left{
-            width: 42%;
+            width: 43%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
         &_right{
-            width: 53%;
+            width: 50%;
         }
     }
 
     &__img{
         img{
-            width: rem(659);
-            height: rem(498);
+            width: rem(626);
+            height: rem(399);
         }
         &_left{
             margin-bottom: rem(33);
@@ -93,8 +93,8 @@
 
         &__desc{
             p{
-                font-size: 14px;
-                line-height: 16.38px;
+                font-size: 15px;
+                line-height: 17.38px;
                 letter-spacing: -0.17px;
             }
         }
