@@ -1,0 +1,36 @@
+.sect5{
+    padding: rem(70) 0 rem(53) 0;
+
+    &__title{
+        margin-bottom: rem(70);
+    }
+
+    iframe{
+        width: 100%;
+        height: rem(527);
+    }
+}
+
+@media screen and (max-width:769px){
+    .sect5{
+        padding: 10px 0 0 0;
+        
+        &__content{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title{
+            margin-bottom: 20px;
+        }
+
+        .wrapper{
+            padding: 0;
+        }
+    
+        iframe{
+            width: 100%;
+            height: 60vw;
+        }
+    }
+}

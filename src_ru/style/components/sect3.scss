@@ -1,0 +1,96 @@
+.sect3{
+    padding: rem(48) 0 rem(40) 0;
+    background-color: #e7f0fd;
+    height: rem(494);
+
+    &__title{
+        margin-bottom: rem(42);
+    }
+
+    &__blocks{
+        padding: rem(138) 0 rem(120) 0;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        img{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: rem(33);
+            z-index: 900;
+            width: rem(1072);
+            height: rem(322);
+            &:first-child{
+                display: block !important;
+            }
+        }
+    }
+
+    &__blockitem{
+        position: relative;
+        z-index: 1000;
+        padding-left: rem(48);
+        span{
+            color: $black;
+            font-size: rem(20);
+            font-weight: 600;
+            line-height: rem(25);
+        }
+    }
+}
+
+
+@media screen and (max-width:769px){
+    .sect3{
+        height: auto;
+        padding: 18px 0 73px 0;
+
+        &__title{
+            h2{
+                font-size: 21px;
+                line-height: 22.12px;
+            }
+        }
+       
+        &__blocks{
+            padding: 0;
+            flex-direction: column;
+            align-items: center;
+            img{
+                display: block !important;
+                &:first-child{
+                    display: none !important;
+                }
+                width: auto;
+                height: auto;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &__blockitem{
+            padding: 0;
+            span{
+                font-size: 13px;
+                line-height: 16.34px;
+            }
+            &_first{
+                padding-top: 35px;
+                padding-left: 10px;
+                margin-bottom: 70px;
+            }
+            &_second{
+                margin-right: 68px;
+                margin-bottom: 75px;
+                padding-left: 22px;
+            }
+            &_third{
+                padding-left: 0;
+                margin-bottom: 71px;
+            }
+            &_fourth{
+                margin-right: 66px;
+            }
+        }
+    }
+}

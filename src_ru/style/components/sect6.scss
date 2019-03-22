@@ -1,0 +1,220 @@
+.sect6{
+    padding: rem(76) 0 rem(29) 0;
+    background-color: #e7f0fd;
+
+    .wrapper{
+        width: rem(1615);
+    }
+
+    &__title{
+        margin-bottom: rem(36);
+    }
+
+    &__blockblocks{
+        margin-bottom: rem(44);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__blockitem{
+        position: relative;
+        width: rem(500);
+        height: rem(206);
+        padding: rem(36) rem(26) rem(16) 0;
+        img{
+            position: absolute;
+            z-index: 700;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .number{
+            position: relative;
+            z-index: 1000;
+            color: $white !important;
+            font-family: parangon;
+            font-size: rem(116);
+            font-weight: 400;
+            line-height: rem(114.630);
+            display: flex;
+            justify-content: flex-end;
+            letter-spacing: rem(28);
+            margin-bottom: rem(12);
+        }
+    }
+
+    &__desc{
+        position: relative;
+        z-index: 1000;
+        text-align: center;
+        padding-left: rem(13);
+        span{
+            color: $white;
+            font-size: rem(17);
+            font-weight: 400;
+            line-height: rem(20.83);
+            letter-spacing: normal;
+            text-transform: uppercase;
+        }
+    }
+
+    &__button{
+        text-align: center;
+    }
+}
+
+
+
+//counter
+.counters {
+      display: flex;
+  }
+  
+.counter {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    height: 3.125rem;
+    font-size: 3.125rem;
+    color: #333;
+    margin: 0 1.25rem 0.625rem;
+}
+.counter > span {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    line-height: 1;
+}
+.counter > span span {
+    flex: 0 0 100%;
+    height: 100%;
+}
+.counter:nth-child(1) > span {
+    transition-delay: 0s;
+}
+.counter:nth-child(2) > span {
+    transition-delay: 0.375s;
+}
+.counter:nth-child(3) > span {
+    transition-delay: 0.75s;
+}
+.counter:nth-child(4) > span {
+    transition-delay: 1.125s;
+}
+.counter:nth-child(5) > span {
+    transition-delay: 1.5s;
+}
+.counter:nth-child(6) > span {
+    transition-delay: 1.875s;
+}
+.counter:nth-child(7) > span {
+    transition-delay: 2.25s;
+}
+.counter:nth-child(8) > span {
+    transition-delay: 2.625s;
+}
+.counter:nth-child(9) > span {
+    transition-delay: 3s;
+}
+.counter:nth-child(10) > span {
+    transition-delay: 3.375s;
+}
+.counter:nth-child(11) > span {
+    transition-delay: 3.75s;
+}
+.counter:nth-child(12) > span {
+    transition-delay: 4.125s;
+}
+.counter:nth-child(13) > span {
+    transition-delay: 4.5s;
+}
+.counter:nth-child(14) > span {
+    transition-delay: 4.875s;
+}
+.counter:nth-child(15) > span {
+    transition-delay: 5.25s;
+}
+.counter:nth-child(16) > span {
+    transition-delay: 5.625s;
+}
+.counter:nth-child(17) > span {
+    transition-delay: 6s;
+}
+.counter:nth-child(18) > span {
+    transition-delay: 6.375s;
+}
+.counter:nth-child(19) > span {
+    transition-delay: 6.75s;
+}
+.counter:nth-child(20) > span {
+    transition-delay: 7.125s;
+}
+
+.counter:nth-child(1) {
+    color: #ef8354;
+}
+
+.counter:nth-child(2) {
+    color: #0eb1d2;
+}
+
+.counter:nth-child(3) {
+    color: #2d3142;
+}
+
+.counter:nth-child(4) {
+    color: #698f3f;
+}
+
+
+@media screen and (max-width:769px){
+    .sect6{
+        padding: 20px 0 34px 0;
+
+        &__title{
+          margin-bottom: 18px;
+            h2{
+              line-height: 25px;
+            }
+        }
+
+        &__blockblocks{
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+
+        &__blockitem{
+            margin-bottom: 22px;
+            width: 274px;
+            height: 146px;
+            margin: 0 auto 22px auto;
+            padding: 29px 15px 0px 4px;
+            .number{
+                font-size: 70px;
+                line-height: 78px;
+                letter-spacing: 11px;
+                margin-bottom: 0;
+            }
+        }
+
+        &__desc{
+            padding: 0;
+            span{
+              font-size: 11px;
+            }
+        }
+
+        &__button{
+            text-align: center;
+            padding-top: 7px;
+        }
+    }
+}

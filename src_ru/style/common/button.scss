@@ -1,0 +1,41 @@
+.button{
+    border: none;
+    width: rem(300);
+    height: rem(78);
+    background-color: #04c939;
+    border: none;
+    border-radius: rem(38);
+    color: $white;
+    font-size: rem(20);
+    font-weight: 700;
+    line-height: rem(25);
+    letter-spacing: rem(0.11);
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    &:hover{
+        background-color: #009d2a;
+    }
+    &:active{
+        background-color: #04c939;
+    }
+}
+
+
+@media screen and (max-width:769px){
+    .button{
+        width: 168px;
+        height: 45px;
+        font-size: 13px;
+        line-height: 11.66px;
+        letter-spacing: 0.11px;
+    }
+}
+
+    
+
+    
+
+
+
+
